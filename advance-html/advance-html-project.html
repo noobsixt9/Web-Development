@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>ADVANCE HTML WEBPAGE </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="noobsixt9">
+        <meta name="description" content="this is the webpage created only using html">
+        <meta name="keywords" content="html5,webpage,front end basic">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <h1><u><b>PIZZA ORDER PAGE</b></u></h1>
+        </header>
+        <section>
+            <img src="./pizza.jpeg" alt="">
+        </section>
+        <section>
+            <h3><u>INTRO VIDEO</u></h3>
+            <video src="" width="540" height="320" controls autoplay loop>
+                <source src="./intro.mp4" type="video/mp4">
+
+            </video>
+        </section>
+        <section>
+            <audio src="" width="500" controls >
+                <source src="./audio.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        <section>
+            <h3><u>AVAILABLE PIZZAS !</u></h3>
+        </section>
+
+        <section>
+            <table border="1px">
+                <thead >
+                    <tr>
+                        <th>PIZZE NAME</th>
+                        <th>PIZZA PRICE</th>
+                        <th>PIZZA SIZE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>pepperoni</td>
+                        <td>13.99</td>
+                        <td>small</td>
+                    </tr>
+                    <tr>
+                        <td>chicken</td>
+                        <td>18.99</td>
+                        <td>small</td>
+                    </tr>
+                    <tr>
+                        <td>veg</td>
+                        <td>10.99</td>
+                        <td>small</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <form action="send-order.php" method="post" id="submit"> <br>
+                NAME:
+                <input type="text" placeholder="ex: john tarvoltta" name="name"> <br>
+                
+                ADDRESS : 
+                <input type="text" placeholder="ex: campus road" name="address"> <br>   
+                STATE: 
+                <input type="text" placeholder="ex: sudurpachim" name="state"> 
+                CITY: 
+                <input type="text" placeholder="ex: dhangadhi" name="city"> <br>    
+                ZIP: 
+                <input type="number" placeholder="ex: 10080" name="zip"> <br>   
+
+                <h3><u>DELIVERY</u></h3>
+                <input type="radio" name="DELIVERY" value="DELIVERY">DELIVERY <br>
+                <input type="radio" name="PICKUP" value="PICKUP">PICKUP <br>
+
+                <h3><u>INGREDIENTS</u></h3>
+                <input type="checkbox" name="ingredients" value="pepperoni">pepperoni <br>
+                <input type="checkbox" name="ingredients" value="salomi">salomi <br>
+                <input type="checkbox" name="ingredients" value="onions">onions <br>
+                <input type="checkbox" name="ingredients" value="extra-cheese">extra-cheese <br>
+                <input type="checkbox" name="ingredients" value="fires">fires <br>
+
+                <h3><u>SIZE</u></h3>    
+                <select name="size" id="size">
+                    <option value="small"> small</option>
+                    <option value="medium"> medium</option>
+                    <option value="large"> large</option>
+                </select>
+                <br><br>
+
+                <button type="submit">
+                    PLACE ORDER
+                </button>
+
+            </form>
+        </section>
+
+        <footer>
+            <center>
+                &copy; COPYRIGHT 2022 <br>
+                <a href="#">TERMS & CONDIONS</a>
+            </center>
+        </footer>
+        
+
+    </body>
+</html>
